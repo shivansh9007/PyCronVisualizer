@@ -1,5 +1,6 @@
+import sys
 from sys import argv
-from PyCronVisualizer.file_parser.json_file_parser import JsonFileParser
+from file_parser.json_file_parser import JsonFileParser
 
 
 def main():
@@ -8,7 +9,8 @@ def main():
 
     # TODO: Write logic to implement smart file parser-selector.
     # GTHF (Good to Have Feature)
-
+    fileParser = JsonFileParser(file_path)
+    fileParser.parse()
 
     
 

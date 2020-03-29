@@ -1,13 +1,13 @@
-from PyCronVisualizer.file_parser import FileParser
-from PyCronVisualizer.cron_job import CronJob
+from file_parser import FileParser
+from cron_job import CronJob
 import json
 
 
 class JsonFileParser(FileParser):
     """docstring for JsonFileParser"""
 
-    def __init__(self):
-        super(JsonFileParser, self).__init__()
+    def __init__(self, file):
+        super(JsonFileParser, self).__init__(file)
 
     def parse(self):
         """

@@ -1,4 +1,4 @@
-from PyCronVisualizer.cron_job import CronJob
+from cron_job import CronJob
 
 class CronJobVisualizer:
     """
@@ -25,5 +25,5 @@ class CronJobVisualizer:
 					`str`
 
 		"""
-		pass
+        pass
 
